@@ -1,0 +1,40 @@
+#include <stdio.h>
+int isPrime(int num);
+void printPrimes(int lowervalue, int uppervalue);
+
+int main()
+{   
+    int uppervalue, lowervalue;
+    printf("Enter the lower and upper values of list primes:-\n");
+    scanf("%d%d", &lowervalue, &uppervalue);
+    printPrimes(lowervalue, uppervalue);
+    return 0;
+}
+
+void printPrimes(int lowervalue, int uppervalue)
+{
+    printf("All prime number between %d to %d are: ", lowervalue, uppervalue);
+  
+    while(lowervalue <= uppervalue)
+    {
+        if(isPrime(lowervalue))
+        {
+            printf("%d, ", lowervalue);
+        }
+        lowervalue++;
+    }
+}
+int isPrime(int num)
+{
+    int i;
+    for(i=2; i<=num/2; i++)
+    {
+        if(num%i==0)
+        {
+            return 0;
+        }
+        return 1;
+    }
+}
+    return 1;
+ }
