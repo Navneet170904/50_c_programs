@@ -1,0 +1,22 @@
+#include <stdio.h>
+int isEven(int num)
+{
+    return !(num&1);
+}
+
+int main()
+{
+    int num;
+    printf("Enter the number:-\n");
+    scanf("%d", &num);
+    
+    if(isEven(num))
+    {
+        printf("This number is even.");
+    }
+    else
+    {
+        printf("This number is odd.");
+    }
+    return 0;
+}
