@@ -20,5 +20,4 @@ void main()
     }
     printf("Sum of all elements of array = %d", sum);
 
-    return 0;
 }
